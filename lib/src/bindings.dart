@@ -516,6 +516,13 @@ abstract class DecodedIdToken {
   /// This value is not actually in the JWT token claims itself. It is added as a
   /// convenience, and is set as the value of the [sub] property.
   external String get uid;
+
+  /// The email of the user to whom the ID token belongs, if available.
+  external String get email;
+
+  /// Whether or not the email of the user to whom the ID token
+  /// belongs is verified, provided the user has an email.
+  external bool get email_verified;
 }
 
 @JS()
