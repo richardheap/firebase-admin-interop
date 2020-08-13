@@ -523,6 +523,12 @@ abstract class DecodedIdToken {
   /// Whether or not the email of the user to whom the ID token
   /// belongs is verified, provided the user has an email.
   external bool get email_verified;
+
+  /// The phone number of the user to whom the ID token belongs, if available.
+  external String get phone_number;
+
+  /// The photo URL for the user to whom the ID token belongs, if available.
+  external String get picture;
 }
 
 @JS()
